@@ -9,7 +9,7 @@ set +a
 
 #Create Docker Image
 echo "creating docker image ${USER_ID}_jre:v1"
-docker built -t ${USER_ID}-jdk:v1 .
+docker build -t ${USER_ID}_jre:v1 .
 
 echo "--- Deploying"
 
