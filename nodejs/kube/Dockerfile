@@ -4,13 +4,13 @@ RUN mkdir -p /usr/src/app/express-server/
 
 WORKDIR /usr/src/app/express-server/
 
-COPY express-server ./
+COPY ../../../express-server ./
 
 RUN npm install
 
 RUN rm -rf dist/*
 
-COPY AppWeb/ dist/
+COPY ../build/dist/* dist/
 
 EXPOSE 3000
 
