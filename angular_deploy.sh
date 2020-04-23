@@ -9,7 +9,7 @@ set +a
 
 #copy express server
 echo "copy express server to /tmp"
-cp -rf /home/koparvathi/express-server /tmp/
+cp -rf /scripts/express-server /tmp/$1/nodejs/kube/
 
 #Create Docker Image
 echo "creating docker image ${USER_ID}_nodejs:v1"
